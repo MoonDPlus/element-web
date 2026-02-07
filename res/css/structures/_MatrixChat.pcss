@@ -68,3 +68,21 @@ Please see LICENSE files in the repository root for full details.
         opacity: 0.8;
     }
 }
+
+@media only screen and (max-width: 1000px) {
+    .mx_MatrixChat--collapsed {
+        .mx_LeftPanel_outerWrapper {
+            width: 0;
+            max-width: 0;
+            flex: 0 0 auto;
+        }
+
+        .mx_LeftPanel_outerWrapper > * {
+            display: none;
+        }
+
+        .mx_ResizeHandle--horizontal {
+            display: none;
+        }
+    }
+}
