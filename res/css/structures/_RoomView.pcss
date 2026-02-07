@@ -205,3 +205,28 @@ Please see LICENSE files in the repository root for full details.
         min-height: 42px;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    :root {
+        --RoomView_MessageList-padding: 12px;
+    }
+
+    .mx_RoomView_body {
+        .mx_RoomView_timeline {
+            margin-right: 0;
+        }
+    }
+
+    .mx_RoomView_empty {
+        margin-right: 0;
+        padding: 0 16px;
+    }
+
+    .mx_RoomView_messagePanel {
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+
+    .mx_RoomView .mx_MessageComposer {
+        padding-bottom: calc(1em + env(safe-area-inset-bottom));
+    }
+}
