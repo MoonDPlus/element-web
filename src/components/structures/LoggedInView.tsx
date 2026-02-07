@@ -743,6 +743,7 @@ class LoggedInView extends React.Component<IProps, IState> {
         const bodyClasses = classNames({
             "mx_MatrixChat": true,
             "mx_MatrixChat--with-avatar": this.state.backgroundImage,
+            "mx_MatrixChat--collapsed": this.props.collapseLhs,
         });
 
         const useNewRoomList = SettingsStore.getValue("feature_new_room_list");
